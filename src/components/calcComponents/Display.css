@@ -1,0 +1,12 @@
+.display-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #2b2b2b;
+  color: #fff;
+}
+
+.value {
+  line-height: 2em;
+  align-self: flex-end;
+  padding-right: 1em;
+}

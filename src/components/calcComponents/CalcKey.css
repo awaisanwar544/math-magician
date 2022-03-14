@@ -1,0 +1,15 @@
+.calc-btn {
+  background-color: #d3d3d3;
+  border: none;
+  color: #383838;
+  padding: 1em 2em;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1em;
+  border: solid 1px #383838;
+}
+
+.operator {
+  background-color: #ffa500;
+}
