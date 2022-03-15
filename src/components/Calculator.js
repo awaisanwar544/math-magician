@@ -92,9 +92,7 @@ class Calculator extends React.Component {
     const { result } = this.state;
     return (
       <div className="calc-container">
-        <div>
-          <Display value={result} />
-        </div>
+        <Display value={result} />
         <div className="keypad">
           {this.buttons.map((item) => (
             <CalcKey
