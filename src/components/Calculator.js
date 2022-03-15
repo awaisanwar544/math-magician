@@ -1,4 +1,5 @@
 import React from 'react';
+import calculate from '../logic/calculate';
 import CalcKey from './calcComponents/CalcKey';
 import Display from './calcComponents/Display';
 
@@ -7,7 +8,13 @@ import './Calculator.css';
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { result: 0 };
+    this.handleClick = this.handleClick.bind(this);
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+    };
+    this.result = '0';
     this.buttons = [
       {
         text: 'AC',
@@ -88,17 +95,31 @@ class Calculator extends React.Component {
     ];
   }
 
+  handleClick(e) {
+    const newState = calculate(this.state, e.target.value);
+    this.setState({ ...newState }, () => {
+    });
+  }
+
+  updateResult = () => {
+    const { total, next } = this.state;
+    if (total === null && next === null) return '0';
+    if (next === null) return total;
+    return next;
+  };
+
   render() {
-    const { result } = this.state;
+    this.result = this.updateResult();
     return (
       <div className="calc-container">
-        <Display value={result} />
+        <Display value={this.result} />
         <div className="keypad">
           {this.buttons.map((item) => (
             <CalcKey
               key={item.text}
               type={item.type}
               keyValue={item.text}
+              onClick={this.handleClick}
             />
           ))}
         </div>
