@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Displays Correct Result Displays correct answer 1`] = `
+<div
+  className="display-container"
+>
+  <p
+    className="value"
+    id="display-value"
+  >
+    70
+  </p>
+</div>
+`;
