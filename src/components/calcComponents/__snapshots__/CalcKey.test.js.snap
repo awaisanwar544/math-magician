@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calculator Keys Displays correct text on the calculator key 1`] = `
+<input
+  className="calc-btn other"
+  data-testid="calc-key"
+  onClick={[MockFunction]}
+  type="button"
+  value="7"
+/>
+`;

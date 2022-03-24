@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calculator Displays correct layout of Calculator 1`] = `
+<div
+  style={
+    Object {
+      "textAlign": "center",
+      "width": "100%",
+    }
+  }
+>
+  <h2>
+    A quick brown jumped over the lazy dogs
+  </h2>
+</div>
+`;
