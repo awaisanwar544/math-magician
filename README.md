@@ -15,6 +15,9 @@
 
 [Live Demo Link on herokuapp](https://calc-math-magician.herokuapp.com/)
 
+[Live Demo Link on netlify](https://relaxed-parfait-f67224.netlify.app/)
+
+
 ## Getting Started
 
 **Follow the steps below to run this project on you local machine**
