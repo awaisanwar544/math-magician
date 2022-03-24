@@ -10,79 +10,79 @@ const Calculator = () => {
   const buttons = [
     {
       text: 'AC',
-      type: 'other',
+      category: 'other',
     },
     {
       text: '+/-',
-      type: 'other',
+      category: 'other',
     },
     {
       text: '%',
-      type: 'other',
+      category: 'other',
     },
     {
       text: '÷',
-      type: 'operator',
+      category: 'operator',
     },
     {
       text: '7',
-      type: 'other',
+      category: 'other',
     },
     {
       text: '8',
-      type: 'other',
+      category: 'other',
     },
     {
       text: '9',
-      type: 'other',
+      category: 'other',
     },
     {
       text: 'x',
-      type: 'operator',
+      category: 'operator',
     },
     {
       text: '4',
-      type: 'other',
+      category: 'other',
     },
     {
       text: '5',
-      type: 'other',
+      category: 'other',
     },
     {
       text: '6',
-      type: 'other',
+      category: 'other',
     },
     {
       text: '-',
-      type: 'operator',
+      category: 'operator',
     },
     {
       text: '1',
-      type: 'other',
+      category: 'other',
     },
     {
       text: '2',
-      type: 'other',
+      category: 'other',
     },
     {
       text: '3',
-      type: 'other',
+      category: 'other',
     },
     {
       text: '+',
-      type: 'operator',
+      category: 'operator',
     },
     {
       text: '0',
-      type: 'other span-2-col',
+      category: 'other span-2-col',
     },
     {
       text: '.',
-      type: 'other',
+      category: 'other',
     },
     {
       text: '=',
-      type: 'operator',
+      category: 'operator',
     },
   ];
 
@@ -113,7 +113,7 @@ const Calculator = () => {
         {buttons.map((item) => (
           <CalcKey
             key={item.text}
-            type={item.type}
+            category={item.category}
             keyValue={item.text}
             onClick={handleClick}
           />

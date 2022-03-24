@@ -84,7 +84,7 @@ export default function calculate(obj, buttonName) {
     if (obj.total) {
       return { ...obj, total: (-1 * parseFloat(obj.total)).toString() };
     }
-    return {};
+    return { next: '0' };
   }
 
   // Button must be an operation
