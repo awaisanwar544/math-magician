@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://awaisanwar544.github.io/math-magician/)
+[Live Demo Link on herokuapp](https://calc-math-magician.herokuapp.com/)
 
 ## Getting Started
 
